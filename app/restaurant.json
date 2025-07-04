@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Royal Kitchen",
+    "cuisine": "Indian",
+    "dish": "Paneer Masala",
+    "spice_level": "high",
+    "veg": true,
+    "price": 180
+  },
+  {
+    "name": "Spicy Treats",
+    "cuisine": "Indian",
+    "dish": "Veg Kolhapuri",
+    "spice_level": "high",
+    "veg": true,
+    "price": 220
+  },
+  {
+    "name": "Biryani Palace",
+    "cuisine": "Indian",
+    "dish": "Chicken Biryani",
+    "spice_level": "high",
+    "veg": false,
+    "price": 250
+  },
+  {
+    "name": "Green Bowl",
+    "cuisine": "Salads",
+    "dish": "Quinoa Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 150
+  },
+  {
+    "name": "Noodle Corner",
+    "cuisine": "Chinese",
+    "dish": "Veg Hakka Noodles",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 190
+  },
+  {
+    "name": "Wok This Way",
+    "cuisine": "Chinese",
+    "dish": "Chicken Manchurian",
+    "spice_level": "high",
+    "veg": false,
+    "price": 210
+  },
+  {
+    "name": "The Curry House",
+    "cuisine": "Indian",
+    "dish": "Rajma Chawal",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 160
+  },
+  {
+    "name": "Masala Magic",
+    "cuisine": "Indian",
+    "dish": "Chole Bhature",
+    "spice_level": "high",
+    "veg": true,
+    "price": 130
+  },
+  {
+    "name": "Tandoori Nights",
+    "cuisine": "Indian",
+    "dish": "Paneer Tikka",
+    "spice_level": "high",
+    "veg": true,
+    "price": 240
+  },
+  {
+    "name": "Budget Bites",
+    "cuisine": "Mixed",
+    "dish": "Aloo Paratha",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 80
+  }
+]
