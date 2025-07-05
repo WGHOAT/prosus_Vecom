@@ -4,9 +4,16 @@ from langchain.schema import (AIMessage, HumanMessage, SystemMessage,ChatResult,
 from langchain.chat_models.base import BaseChatModel
 from typing import List, Any
 from groq import Groq
+from langchain_core.output_parsers import JsonOutputParser
 
 load_dotenv(dotenv_path="/home/ajay/Documents/sleeping_dog_don/prosus_vecom/app/.env")
 print("GROQ_API_KEY:", os.getenv("GROQ_API_KEY"))  # Add this line for debugging
+
+
+parser = JsonOutputParser(pydantic_object={
+
+    
+})
 
 class chatgroq(BaseChatModel):
     client: Any = None

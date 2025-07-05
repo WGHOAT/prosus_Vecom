@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 import groq
 from app.toolapps import find_restaurant, food_order, update_profile
-from app.llm_warpper import chatgroq
+from langchain_groq import ChatGroq
 from langchain.agents import initialize_agent, AgentType
 
 
@@ -10,13 +10,12 @@ tools = [find_restaurant, food_order, update_profile]
 
 load_dotenv(dotenv_path="/home/ajay/Documents/sleeping_dog_don/prosus_vecom/app/.env")
 
-llm = chatgroq(model="llama3-8b-8192",temperature=0.7)
+llm = ChatGroq(model="llama3-8b-8192",temperature=0.7)
 from langchain.schema import SystemMessage
 
 system_msg = SystemMessage(content="""
 You are an AI agent that uses the following tools to respond to user queries. 
 Always respond in this format:
-
 Thought: <what you're thinking>
 Action: <tool name>
 Action Input: <JSON dict as string>
