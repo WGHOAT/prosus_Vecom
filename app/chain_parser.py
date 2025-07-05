@@ -1,51 +1,43 @@
 from langchain_groq import ChatGroq
-from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import ChatPromptTemplate
-import os
+from langchain_core.output_parsers import JsonOutputParser
+from langchain.output_parsers import OutputFixingParser  # 👈 key import
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="/home/ajay/Documents/sleeping_dog_don/prosus_vecom/app/.env")
+load_dotenv()
 
-# LLM initialization
-llm = ChatGroq(model="llama3-8b-8192", temperature=0.3)
-
-# JSON structure we want from the LLM
-parser = JsonOutputParser(pydantic_object={
+# 1. Define base parser
+base_parser = JsonOutputParser(pydantic_object={
     "type": "object",
     "properties": {
-        "action": {"type": "string"},  # e.g., "find_restaurant"
-        "params": {"type": "object"}   # dict for tool parameters
+        "action": {"type": "string"},
+        "params": {"type": "object"},
+        "response": {"type": "string"}
     },
-    "required": ["action", "params"]
+    "required": ["action", "params", "response"]
 })
 
-# Prompt the LLM with clear instruction
-prompt = ChatPromptTemplate.from_messages([
-    ("system", """You are a structured API interface to a food ordering assistant.
+# 2. Wrap it with OutputFixingParser
+from langchain_core.runnables import RunnablePassthrough  # Add this import if not already present
 
-Return JSON **only** in this format:
+parser = OutputFixingParser(parser=base_parser, retry_chain=RunnablePassthrough())
+
+# 3. System prompt with aggressive instruction
+prompt = ChatPromptTemplate.from_messages([
+    ("system", """You are a helpful assistant for a food ordering service.
+Return ONLY a JSON object with the following format:
 
 {{
   "action": "find_restaurant" | "food_order" | "update_profile",
-  "params": {{
-    "veg": true,
-    "spice_level": "high",
-    "max_price": 200
-  }}
+  "params": {{ ... }},
+  "response": "Friendly summary of what you did"
 }}
-
-✱ If the user is asking for food preferences (like "spicy", "veg", "under 200"), the action should be "find_restaurant".
-✱ If the user is placing an actual order ("order", "get me", "I want 2 of..."), then use "food_order".
-✱ Only use "update_profile" when the user is asking to save or change their preferences or history.
-
-Do NOT guess.
-Do NOT hallucinate action names.
-Do NOT output anything outside the required JSON.
-"""),
+Do not give the Counting of number of Restaurant you found just say these are the results i have found
+No intro. No explanation. No comments. Just raw JSON, nothing else."""),
     ("user", "{input}")
 ])
 
-
-
-# Final LangChain chain
+# 4. Connect your chain
+llm = ChatGroq(model="llama3-8b-8192", temperature=0.3)
 parser_chain = prompt | llm | parser
+

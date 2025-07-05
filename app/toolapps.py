@@ -24,11 +24,22 @@ def find_restaurant(input: dict):
     for res in restaurants:
         if veg and not res["veg"]:
             continue
-        if res["spice_level"] != spice_level:
+
+        res_spice = res.get("spice_level", "").lower()
+        input_spice = spice_level.lower()
+
+        if input_spice == "high" and res_spice not in ["high", "medium"]:
             continue
+        if input_spice == "medium" and res_spice != "medium":
+            continue
+        if input_spice == "low" and res_spice != "low":
+            continue
+
         if res["price"] > max_price:
             continue
+
         found.append(res)
+
     return found[:3]
 
 def food_order(input: dict):
