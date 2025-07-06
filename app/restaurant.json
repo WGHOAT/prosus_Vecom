@@ -78,5 +78,653 @@
     "spice_level": "medium",
     "veg": true,
     "price": 80
+  },
+  {
+    "name": "Spice Villa",
+    "cuisine": "Indian",
+    "dish": "Veg Pulao",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 140
+  },
+  {
+    "name": "Urban Tadka",
+    "cuisine": "Indian",
+    "dish": "Dal Makhani",
+    "spice_level": "low",
+    "veg": true,
+    "price": 170
+  },
+  {
+    "name": "Saffron Lounge",
+    "cuisine": "Indian",
+    "dish": "Paneer Butter Masala",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 210
+  },
+  {
+    "name": "Dragon Express",
+    "cuisine": "Chinese",
+    "dish": "Veg Spring Rolls",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 120
+  },
+  {
+    "name": "Chopstick House",
+    "cuisine": "Chinese",
+    "dish": "Chilli Paneer",
+    "spice_level": "high",
+    "veg": true,
+    "price": 180
+  },
+  {
+    "name": "Wrap & Roll",
+    "cuisine": "Mixed",
+    "dish": "Paneer Kathi Roll",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 110
+  },
+  {
+    "name": "Taste of Punjab",
+    "cuisine": "Indian",
+    "dish": "Sarson Da Saag",
+    "spice_level": "low",
+    "veg": true,
+    "price": 160
+  },
+  {
+    "name": "Bombay Bites",
+    "cuisine": "Indian",
+    "dish": "Pav Bhaji",
+    "spice_level": "high",
+    "veg": true,
+    "price": 100
+  },
+  {
+    "name": "Healthy Greens",
+    "cuisine": "Salads",
+    "dish": "Sprout Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 90
+  },
+  {
+    "name": "Royal Feast",
+    "cuisine": "Indian",
+    "dish": "Shahi Paneer",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 200
+  },
+  {
+    "name": "The Dosa Hub",
+    "cuisine": "South Indian",
+    "dish": "Masala Dosa",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 120
+  },
+  {
+    "name": "Rice Bowl",
+    "cuisine": "Chinese",
+    "dish": "Fried Rice",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 130
+  },
+  {
+    "name": "Punjabi Rasoi",
+    "cuisine": "Indian",
+    "dish": "Butter Chicken",
+    "spice_level": "high",
+    "veg": false,
+    "price": 260
+  },
+  {
+    "name": "Veggie Delight",
+    "cuisine": "Salads",
+    "dish": "Caesar Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 110
+  },
+  {
+    "name": "Momo Station",
+    "cuisine": "Tibetan",
+    "dish": "Veg Momos",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 90
+  },
+  {
+    "name": "Spicy Affair",
+    "cuisine": "Indian",
+    "dish": "Mirchi Bajji",
+    "spice_level": "high",
+    "veg": true,
+    "price": 70
+  },
+  {
+    "name": "Curry Point",
+    "cuisine": "Indian",
+    "dish": "Chicken Curry",
+    "spice_level": "high",
+    "veg": false,
+    "price": 230
+  },
+  {
+    "name": "Tandoor Express",
+    "cuisine": "Indian",
+    "dish": "Tandoori Roti",
+    "spice_level": "low",
+    "veg": true,
+    "price": 40
+  },
+  {
+    "name": "Chaat Bazaar",
+    "cuisine": "Indian",
+    "dish": "Pani Puri",
+    "spice_level": "high",
+    "veg": true,
+    "price": 60
+  },
+  {
+    "name": "Bowlful",
+    "cuisine": "Mixed",
+    "dish": "Buddha Bowl",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 180
+  },
+  {
+    "name": "The Grill House",
+    "cuisine": "Indian",
+    "dish": "Chicken Tikka",
+    "spice_level": "high",
+    "veg": false,
+    "price": 250
+  },
+  {
+    "name": "Paneer Point",
+    "cuisine": "Indian",
+    "dish": "Paneer Bhurji",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 170
+  },
+  {
+    "name": "Samosa Junction",
+    "cuisine": "Indian",
+    "dish": "Samosa",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 30
+  },
+  {
+    "name": "Wrap King",
+    "cuisine": "Mixed",
+    "dish": "Chicken Shawarma",
+    "spice_level": "high",
+    "veg": false,
+    "price": 150
+  },
+  {
+    "name": "Salad Stop",
+    "cuisine": "Salads",
+    "dish": "Greek Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 120
+  },
+  {
+    "name": "Dal Delight",
+    "cuisine": "Indian",
+    "dish": "Dal Tadka",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 110
+  },
+  {
+    "name": "Rice & Spice",
+    "cuisine": "Indian",
+    "dish": "Jeera Rice",
+    "spice_level": "low",
+    "veg": true,
+    "price": 90
+  },
+  {
+    "name": "Chilli Chaska",
+    "cuisine": "Chinese",
+    "dish": "Chilli Chicken",
+    "spice_level": "high",
+    "veg": false,
+    "price": 200
+  },
+  {
+    "name": "Veggie Treat",
+    "cuisine": "Indian",
+    "dish": "Mix Veg Curry",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 150
+  },
+  {
+    "name": "Biryani Express",
+    "cuisine": "Indian",
+    "dish": "Veg Biryani",
+    "spice_level": "high",
+    "veg": true,
+    "price": 170
+  },
+  {
+    "name": "The Paratha House",
+    "cuisine": "Indian",
+    "dish": "Paneer Paratha",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 100
+  },
+  {
+    "name": "Chowmein Corner",
+    "cuisine": "Chinese",
+    "dish": "Veg Chowmein",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 120
+  },
+  {
+    "name": "Dilli Chaat",
+    "cuisine": "Indian",
+    "dish": "Aloo Tikki",
+    "spice_level": "high",
+    "veg": true,
+    "price": 50
+  },
+  {
+    "name": "The Kebab Factory",
+    "cuisine": "Indian",
+    "dish": "Seekh Kebab",
+    "spice_level": "high",
+    "veg": false,
+    "price": 220
+  },
+  {
+    "name": "South Spice",
+    "cuisine": "South Indian",
+    "dish": "Idli Sambar",
+    "spice_level": "low",
+    "veg": true,
+    "price": 60
+  },
+  {
+    "name": "Maharaja Meals",
+    "cuisine": "Indian",
+    "dish": "Thali",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 200
+  },
+  {
+    "name": "Paneer Palace",
+    "cuisine": "Indian",
+    "dish": "Paneer Do Pyaza",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 180
+  },
+  {
+    "name": "Chilli House",
+    "cuisine": "Chinese",
+    "dish": "Chilli Garlic Noodles",
+    "spice_level": "high",
+    "veg": true,
+    "price": 140
+  },
+  {
+    "name": "The Salad Bar",
+    "cuisine": "Salads",
+    "dish": "Fruit Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 80
+  },
+  {
+    "name": "Momo Magic",
+    "cuisine": "Tibetan",
+    "dish": "Chicken Momos",
+    "spice_level": "medium",
+    "veg": false,
+    "price": 110
+  },
+  {
+    "name": "The Wrap Spot",
+    "cuisine": "Mixed",
+    "dish": "Egg Roll",
+    "spice_level": "medium",
+    "veg": false,
+    "price": 90
+  },
+  {
+    "name": "Chaat Chat",
+    "cuisine": "Indian",
+    "dish": "Dahi Puri",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 70
+  },
+  {
+    "name": "Rice Republic",
+    "cuisine": "Chinese",
+    "dish": "Schezwan Rice",
+    "spice_level": "high",
+    "veg": true,
+    "price": 150
+  },
+  {
+    "name": "Paneer Express",
+    "cuisine": "Indian",
+    "dish": "Paneer Pasanda",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 190
+  },
+  {
+    "name": "The Curry Leaf",
+    "cuisine": "Indian",
+    "dish": "Kadhi Pakora",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 120
+  },
+  {
+    "name": "Tandoori Treat",
+    "cuisine": "Indian",
+    "dish": "Tandoori Chicken",
+    "spice_level": "high",
+    "veg": false,
+    "price": 260
+  },
+  {
+    "name": "Veggie Platter",
+    "cuisine": "Mixed",
+    "dish": "Veg Platter",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 200
+  },
+  {
+    "name": "The Dosa Place",
+    "cuisine": "South Indian",
+    "dish": "Rava Dosa",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 130
+  },
+  {
+    "name": "Chilli Pepper",
+    "cuisine": "Chinese",
+    "dish": "Pepper Chicken",
+    "spice_level": "high",
+    "veg": false,
+    "price": 210
+  },
+  {
+    "name": "Paneer Point",
+    "cuisine": "Indian",
+    "dish": "Paneer Lababdar",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 200
+  },
+  {
+    "name": "The Salad Stop",
+    "cuisine": "Salads",
+    "dish": "Corn Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 70
+  },
+  {
+    "name": "Chaat Chaska",
+    "cuisine": "Indian",
+    "dish": "Sev Puri",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 60
+  },
+  {
+    "name": "Rice & Curry",
+    "cuisine": "Indian",
+    "dish": "Curd Rice",
+    "spice_level": "low",
+    "veg": true,
+    "price": 80
+  },
+  {
+    "name": "The Grill Spot",
+    "cuisine": "Indian",
+    "dish": "Fish Tikka",
+    "spice_level": "high",
+    "veg": false,
+    "price": 230
+  },
+  {
+    "name": "Paneer House",
+    "cuisine": "Indian",
+    "dish": "Paneer Tikka Masala",
+    "spice_level": "high",
+    "veg": true,
+    "price": 210
+  },
+  {
+    "name": "Veggie Bowl",
+    "cuisine": "Salads",
+    "dish": "Russian Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 100
+  },
+  {
+    "name": "The Paratha Place",
+    "cuisine": "Indian",
+    "dish": "Gobi Paratha",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 90
+  },
+  {
+    "name": "Chilli Mania",
+    "cuisine": "Chinese",
+    "dish": "Chilli Paneer Dry",
+    "spice_level": "high",
+    "veg": true,
+    "price": 170
+  },
+  {
+    "name": "The Curry Pot",
+    "cuisine": "Indian",
+    "dish": "Mutton Curry",
+    "spice_level": "high",
+    "veg": false,
+    "price": 270
+  },
+  {
+    "name": "Paneer Delight",
+    "cuisine": "Indian",
+    "dish": "Paneer Malai Tikka",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 220
+  },
+  {
+    "name": "Salad Express",
+    "cuisine": "Salads",
+    "dish": "Sprout Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 80
+  },
+  {
+    "name": "The Dosa Corner",
+    "cuisine": "South Indian",
+    "dish": "Onion Dosa",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 110
+  },
+  {
+    "name": "Rice Delight",
+    "cuisine": "Chinese",
+    "dish": "Egg Fried Rice",
+    "spice_level": "medium",
+    "veg": false,
+    "price": 140
+  },
+  {
+    "name": "Paneer Magic",
+    "cuisine": "Indian",
+    "dish": "Paneer Angara",
+    "spice_level": "high",
+    "veg": true,
+    "price": 230
+  },
+  {
+    "name": "Chaat Express",
+    "cuisine": "Indian",
+    "dish": "Bhel Puri",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 50
+  },
+  {
+    "name": "The Grill Room",
+    "cuisine": "Indian",
+    "dish": "Chicken Seekh Kebab",
+    "spice_level": "high",
+    "veg": false,
+    "price": 240
+  },
+  {
+    "name": "Veggie Express",
+    "cuisine": "Mixed",
+    "dish": "Veg Sandwich",
+    "spice_level": "low",
+    "veg": true,
+    "price": 60
+  },
+  {
+    "name": "Paneer Paradise",
+    "cuisine": "Indian",
+    "dish": "Paneer Bhurji",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 180
+  },
+  {
+    "name": "Rice House",
+    "cuisine": "Chinese",
+    "dish": "Veg Fried Rice",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 120
+  },
+  {
+    "name": "Chilli Delight",
+    "cuisine": "Chinese",
+    "dish": "Chilli Garlic Potato",
+    "spice_level": "high",
+    "veg": true,
+    "price": 130
+  },
+  {
+    "name": "The Salad Kitchen",
+    "cuisine": "Salads",
+    "dish": "Bean Salad",
+    "spice_level": "low",
+    "veg": true,
+    "price": 90
+  },
+  {
+    "name": "Paneer Treat",
+    "cuisine": "Indian",
+    "dish": "Paneer Tikka Roll",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 150
+  },
+  {
+    "name": "The Dosa Spot",
+    "cuisine": "South Indian",
+    "dish": "Paper Dosa",
+    "spice_level": "low",
+    "veg": true,
+    "price": 100
+  },
+  {
+    "name": "Chaat House",
+    "cuisine": "Indian",
+    "dish": "Ragda Pattice",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 70
+  },
+  {
+    "name": "Rice & More",
+    "cuisine": "Chinese",
+    "dish": "Triple Schezwan Rice",
+    "spice_level": "high",
+    "veg": true,
+    "price": 160
+  },
+  {
+    "name": "Paneer Lovers",
+    "cuisine": "Indian",
+    "dish": "Paneer Butter Fry",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 200
+  },
+  {
+    "name": "The Grill Palace",
+    "cuisine": "Indian",
+    "dish": "Chicken Malai Tikka",
+    "spice_level": "medium",
+    "veg": false,
+    "price": 250
+  },
+  {
+    "name": "Veggie Magic",
+    "cuisine": "Mixed",
+    "dish": "Veg Burger",
+    "spice_level": "low",
+    "veg": true,
+    "price": 80
+  },
+  {
+    "name": "Paneer Special",
+    "cuisine": "Indian",
+    "dish": "Paneer Chilli",
+    "spice_level": "high",
+    "veg": true,
+    "price": 190
+  },
+  {
+    "name": "Rice King",
+    "cuisine": "Chinese",
+    "dish": "Chicken Fried Rice",
+    "spice_level": "medium",
+    "veg": false,
+    "price": 160
+  },
+  {
+    "name": "Chaat King",
+    "cuisine": "Indian",
+    "dish": "Dahi Bhalla",
+    "spice_level": "medium",
+    "veg": true,
+    "price": 60
   }
 ]

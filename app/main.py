@@ -3,7 +3,17 @@ from pydantic import BaseModel
 from app.chain_parser import parser_chain 
 from app.toolapps import find_restaurant, food_order, update_profile
 import json
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # For development only. Use specific origins in production!
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class UserInput(BaseModel):
     message : str
@@ -79,7 +89,26 @@ def user_chat(user_input: UserInput):
             "error": str(e),
             "response": "Oops! Something went wrong processing your request."
         }
-    
 
-    
+
+"""
+Dude allow port eg i set up the fastapi port as 8000 so do
+
+sudo ufw allow 8000 
+
+and also for react app 
+
+and for react app run it like this 
+
+npx expo start
+
+
+install expo app and then scan the qr
+
+
+
+
+"""
+
+
 
