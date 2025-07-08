@@ -1,8 +1,30 @@
-[ 
-{
-    "veg": true,
-    "preferred_spice": "high",
-    "budget": 300,
-    "past_orders": []
-}
+[
+     {
+          "name": "Ajay",
+          "veg": true,
+          "preferred_spice": "high",
+          "budget": 200,
+          "past_orders": [
+               {
+                    "dish": "test",
+                    "quantity": 1
+               },
+               {
+                    "dish": "chicken biryani",
+                    "quantity": 1
+               },
+               {
+                    "dish": "pizza",
+                    "quantity": 1
+               },
+               {
+                    "dish": "chicken biryani",
+                    "quantity": 1
+               },
+               {
+                    "dish": "chicken biriyani",
+                    "quantity": 1
+               }
+          ]
+     }
 ]

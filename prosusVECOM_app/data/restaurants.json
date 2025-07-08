@@ -1,0 +1,338 @@
+[
+  {
+    "name": "The Green Plate",
+    "veg": true,
+    "spice_level": "low",
+    "price": 150
+  },
+  {
+    "name": "Spice Route",
+    "veg": false,
+    "spice_level": "high",
+    "price": 250
+  },
+  {
+    "name": "Veggie Delight",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 180
+  },
+  {
+    "name": "Meat Lovers Grill",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 300
+  },
+  {
+    "name": "Curry House",
+    "veg": false,
+    "spice_level": "high",
+    "price": 200
+  },
+  {
+    "name": "Healthy Bites",
+    "veg": true,
+    "spice_level": "low",
+    "price": 120
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "low",
+    "price": 750
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 625
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 147
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 191
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 877
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 384
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "high",
+    "price": 273
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 72
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 718
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 382
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "high",
+    "price": 700
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 1038
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "high",
+    "price": 559
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 195
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 842
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 984
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 1164
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 114
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "low",
+    "price": 262
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 511
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "high",
+    "price": 821
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 84
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 114
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 299
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 614
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 510
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 449
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 76
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 579
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 617
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 325
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "high",
+    "price": 768
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "low",
+    "price": 67
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 724
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 984
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 110
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "low",
+    "price": 992
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 1069
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 458
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 506
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 347
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 214
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 279
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "high",
+    "price": 1147
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 822
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 590
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 1172
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "medium",
+    "price": 455
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": true,
+    "spice_level": "low",
+    "price": 394
+  },
+  {
+    "name": "Restaurant {len(restaurants) + 1 + i}",
+    "veg": false,
+    "spice_level": "medium",
+    "price": 920
+  }
+]

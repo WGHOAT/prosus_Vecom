@@ -1,9 +1,10 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from app.chain_parser import parser_chain 
-from app.toolapps import find_restaurant, food_order, update_profile
+from app.chain_parser import parser_chain
+from app.toolapps import find_restaurant, food_order, update_profile, get_past_orders
 import json
 from fastapi.middleware.cors import CORSMiddleware
+from typing import Union
 
 app = FastAPI()
 
@@ -17,6 +18,17 @@ app.add_middleware(
 
 class UserInput(BaseModel):
     message : str
+
+class ToolCall(BaseModel):
+    action: str
+    params: dict
+    result: Union[dict, list, str]
+    response: str
+
+class ErrorResponse(BaseModel):
+    error: str
+    response: str
+
 @app.get("/")
 def read_root():
     return {"it works man"}
@@ -25,40 +37,13 @@ def read_root():
 tool_map = {
     "find_restaurant": find_restaurant,
     "food_order": food_order,
-    "update_profile": update_profile
+    "update_profile": update_profile,
+    "get_past_orders": get_past_orders
 }
 
-def normalize_params(params: dict) -> dict:
-    key_map = {
-        "cuisine": "veg",
-        "spiciness": "spice_level",
-        "budget": "max_price"
-    }
+from app.utils import normalize_params
 
-    spice_map = {
-        "spicy": "high",
-        "mild": "low",
-        "medium": "medium",
-        "hot": "high"
-    }
-
-    normalized = {}
-    for k, v in params.items():
-        new_key = key_map.get(k, k)
-
-        # Handle veg
-        if new_key == "veg" and isinstance(v, str):
-            v = v.lower() in ["veg", "vegetarian", "yes"]
-
-        # Normalize spice level
-        if new_key == "spice_level" and isinstance(v, str):
-            v = spice_map.get(v.lower(), v.lower())
-
-        normalized[new_key] = v
-
-    return normalized
-
-@app.post("/user-chat")
+@app.post("/user-chat", response_model=Union[ToolCall, ErrorResponse])
 def user_chat(user_input: UserInput):
     try:
         parsed = parser_chain.invoke({"input": user_input.message})
@@ -70,25 +55,25 @@ def user_chat(user_input: UserInput):
         response_msg = parsed.get("response", "Here’s what I found for you!")
 
         if action not in tool_map:
-            return {
-                "error": f"Unknown action: {action}",
-                "response": "Sorry, I didn’t understand what you want me to do."
-            }
+            return ErrorResponse(
+                error=f"Unknown action: {action}",
+                response="Sorry, I didn’t understand what you want me to do."
+            )
 
         result = tool_map[action](params)
 
-        return {
-            "action": action,
-            "params": params,
-            "result": result,
-            "response": response_msg
-        }
+        return ToolCall(
+            action=action,
+            params=params,
+            result=result,
+            response=response_msg
+        )
 
     except Exception as e:
-        return {
-            "error": str(e),
-            "response": "Oops! Something went wrong processing your request."
-        }
+        return ErrorResponse(
+            error=str(e),
+            response="Oops! Something went wrong processing your request."
+        )
 
 
 """

@@ -27,12 +27,10 @@ export default function TabLayout() {
         }),
       }}>
       <Tabs.Screen
-        name="AIChatScreen"
+        name="index"
         options={{
-          title: 'AI Chat',
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="sparkles" color={color} />
-          ),
+          title: 'AI Food Assistant',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="fork.knife" color={color} />,
         }}
       />
     </Tabs>

@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "react-app",
-    "slug": "react-app",
+    "name": "prosusVECOM_app",
+    "slug": "prosusVECOM_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "reactapp",
+    "scheme": "prosusvecomapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

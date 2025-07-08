@@ -1,29 +1,32 @@
 import json
-from langchain.tools import tool
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
 
 def load_profile():
-    with open("user_profile.json",'r') as f:
+    with open(BASE_DIR / "user_profile.json",'r') as f:
         return json.load(f)
     
 def save_profile(profile):
-    with open("user_profile.json",'w') as f:
+    with open(BASE_DIR / "user_profile.json",'w') as f:
         json.dump(profile ,f, indent= 5)
 
-import json
-
 def find_restaurant(input: dict):
-    with open("/home/ajay/Documents/sleeping_dog_don/prosus_vecom/app/restaurant.json", "r") as f:
+    with open(BASE_DIR / "restaurant.json", "r") as f:
         restaurants = json.load(f)
 
-    veg = input.get("veg", True)
+    veg = input.get("veg") 
     spice_level = input.get("spice_level", "medium")
     max_price = input.get("max_price", 200)
+    
 
     found = []
     for res in restaurants:
-        if veg and not res["veg"]:
-            continue
+        if veg is not None:
+            if veg and not res["veg"]:
+                continue
+            if not veg and res["veg"]:
+                continue
 
         res_spice = res.get("spice_level", "").lower()
         input_spice = spice_level.lower()
@@ -43,8 +46,28 @@ def find_restaurant(input: dict):
     return found[:3]
 
 def food_order(input: dict):
-    return f"Order placed for {input.get('quantity', 1)} x {input.get('dish', 'unknown')}."
+    profile = load_profile()[0]
+    order = {"dish": input.get('dish', 'unknown'), "quantity": input.get("quantity", 1)}
+    if "past_orders" not in profile:
+        profile["past_orders"] = []
+    profile["past_orders"].append(order)
+    save_profile([profile])
+    return order
 
 def update_profile(input: dict):
-    # dummy update 
-    return f"Profile updated with order: {input}"
+    profile = load_profile()[0]
+    
+    # Update profile with new preferences
+    if "veg" in input:
+        profile["veg"] = input["veg"]
+    if "spice_level" in input:
+        profile["preferred_spice"] = input["spice_level"]
+    if "max_price" in input:
+        profile["budget"] = input["max_price"]
+    
+    save_profile([profile])
+    return f"Profile updated successfully: {profile}"
+
+def get_past_orders(_input: dict):
+    profile = load_profile()[0]
+    return profile.get("past_orders", [])
